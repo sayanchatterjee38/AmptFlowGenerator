@@ -18,7 +18,7 @@ void flow_Jobtree(Int_t kfile = 50)
   TString Str;
   ifstream fpr("PbPb_AMPT.txt", ios::in);
 
-  TFile *file_out = new TFile("simpletree50.root","recreate");
+  TFile *file_out = new TFile("simpletree.root","recreate");
   TTree *tree_out = new TTree("tree_out","tree_out");
   for(Int_t ifile = 0; ifile< kfile; ifile++)
     {
